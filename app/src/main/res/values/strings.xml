@@ -6,8 +6,8 @@
     <string name="title_activity_criar_conta_ativity">CriarContaAtivity</string>
     <string name="CriarConta">Criar conta</string>
     <string name="String_Button_Entrar">Entrar</string>
-    <string name="Nome_Criarconta">Name</string>
-    <string name="Senha_CriarConta">Name</string>
+    <string name="Nome_Criarconta">Nome</string>
+    <string name="Senha_CriarConta">Nome</string>
     <string name="title_activity_esqueci_senha">EsqueciSenha</string>
 
 </resources>
