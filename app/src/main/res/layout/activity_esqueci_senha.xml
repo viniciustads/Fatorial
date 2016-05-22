@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fact.fatorial.EsqueciSenha">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/recuperarsenha"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Recuperar senha"
+        android:id="@+id/txv_senha"
+        android:layout_centerHorizontal="true"
+        android:background="#9d000000"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textIsSelectable="false"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

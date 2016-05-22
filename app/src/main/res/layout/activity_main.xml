@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffd1d2ff"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Logon"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logon"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="#3f000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_Nome"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="68dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText_Senha"
+            android:layout_below="@+id/editText_Nome"
+            android:layout_alignStart="@+id/editText_Nome"
+            android:layout_marginTop="26dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/String_Button_Entrar"
+            android:id="@+id/buttonEntrar"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/editText_Senha"
+            android:layout_alignEnd="@+id/editText_Senha"
+            android:onClick="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criar uma conta"
+            android:id="@+id/textView"
+            android:layout_below="@+id/buttonEntrar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:onClick="criarContaAtivity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueci minha senha"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:onClick="recuperarSenhaAtivity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Nome:"
+            android:id="@+id/textView3"
+            android:editable="false"
+            android:layout_alignBaseline="@+id/editText_Nome"
+            android:layout_alignBottom="@+id/editText_Nome"
+            android:layout_toStartOf="@+id/editText_Nome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Senha:"
+            android:id="@+id/textView4"
+            android:layout_alignBaseline="@+id/editText_Senha"
+            android:layout_alignBottom="@+id/editText_Senha"
+            android:layout_alignEnd="@+id/textView3" />
+
+    </RelativeLayout>
+</LinearLayout>
